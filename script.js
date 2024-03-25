@@ -12,18 +12,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
         switch (key) {
             case 'ArrowUp':
-                ball.style.top = (ballTop - 10,0) + 'px';
+                ball.style.top = (ballTop - 10,0)
                 break;
             case 'ArrowDown':
-                ball.style.top = (ballTop + 10game, Container.clientHeight - ball.offsetHeight) + 'px';
+                ball.style.top = (ballTop + 10game, Container.clientHeight - ball.offsetHeight)
                 break;
             case 'ArrowLeft':
-                ball.style.left = (ballLeft - 10,0) + 'px';
+                ball.style.left = (ballLeft - 10,0)
                 break;
             case 'ArrowRight':
-                ball.style.left = (ballLeft + 10, gameContainer.clientHeight - ball.offsetHeight) + 'px';
+                ball.style.left = (ballLeft + 10, gameContainer.clientHeight - ball.offsetHeight)
                 break;
         }
+        ball.style.left = ballLeft + 'px';
+        ball.style.top = ballTop + 'px';
+        
         // Check win condition
         if (checkCollision(ball, goal)) {
             alert('Congratulations! You won!');
