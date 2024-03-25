@@ -12,13 +12,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
         switch (key) {
             case 'ArrowUp':
-                ball.style.top = (ballTop - 10,0)
+                ball.style.top = (ballTop - 10, 0)
                 break;
             case 'ArrowDown':
-                ball.style.top = (ballTop + 10game, Container.clientHeight - ball.offsetHeight)
+                ball.style.top = (ballTop + 10, gameContainer.clientHeight - ball.offsetHeight)
                 break;
             case 'ArrowLeft':
-                ball.style.left = (ballLeft - 10,0)
+                ball.style.left = (ballLeft - 10, 0)
                 break;
             case 'ArrowRight':
                 ball.style.left = (ballLeft + 10, gameContainer.clientHeight - ball.offsetHeight)
