@@ -12,16 +12,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
         switch (key) {
             case 'ArrowUp':
-                ball.style.top = (ballTop - 10) + 'px';
+                ball.style.top = (ballTop - 10,0) + 'px';
                 break;
             case 'ArrowDown':
-                ball.style.top = (ballTop + 10) + 'px';
+                ball.style.top = (ballTop + 10game, Container.clientHeight - ball.offsetHeight) + 'px';
                 break;
             case 'ArrowLeft':
-                ball.style.left = (ballLeft - 10) + 'px';
+                ball.style.left = (ballLeft - 10,0) + 'px';
                 break;
             case 'ArrowRight':
-                ball.style.left = (ballLeft + 10) + 'px';
+                ball.style.left = (ballLeft + 10, gameContainer.clientHeight - ball.offsetHeight) + 'px';
                 break;
         }
         // Check win condition
